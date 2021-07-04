@@ -14,7 +14,6 @@ RUN microdnf update && echo "[main]" > /etc/dnf/dnf.conf \
    --enablerepo=mysql80-server-minimal $MYSQL_SERVER_PACKAGE \
   && microdnf install -y java \
   && microdnf install -y yum \
-  && yum install -y htop \
   && microdnf clean all \
   && mkdir /docker-entrypoint-initdb.d \
   && pip3 install supervisor \
