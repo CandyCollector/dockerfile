@@ -2,7 +2,7 @@
 
 启动命令：docker run -itd  -v 数据库挂载路径:/var/lib/mysql -p 你要用的端口:8080  镜像名字:版本
 
-跟随 docker 进程启动--restart=”always"
+跟随 docker 进程启动--restart="always"
 
 首次使用需要手动初始化密码：
 
