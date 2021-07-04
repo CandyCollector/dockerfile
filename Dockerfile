@@ -5,8 +5,7 @@ ARG MYSQL_SHELL_PACKAGE=mysql-shell-8.0.25
 
 # Setup repositories for minimal packages (all versions)
 RUN rpm -U https://repo.mysql.com/mysql-community-minimal-release-el8.rpm \
-  && rpm -U https://repo.mysql.com/mysql80-community-release-el8.rpm \
-  && rpm -Uvh https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+  && rpm -U https://repo.mysql.com/mysql80-community-release-el8.rpm 
 
 # Install server and shell 8.0
 RUN microdnf update && echo "[main]" > /etc/dnf/dnf.conf \
